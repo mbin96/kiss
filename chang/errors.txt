@@ -1,0 +1,16 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 141: end of line expected.
+(Perhaps you left out a " at the end of the first line.)
+    b "너 구해주러 왔어. 여긴 아직 학교 교실이야" "
+                                 ^
+        b "지금 빨리 밖으로 나가야해. 여긴 위험해"
+        "역시 아까본건 꿈이 아니였나보다."
+        "사람들은 다 괴물이 되어버린걸까? 나는 왜 안변한거지?"
+        "    -오빠를 따라간다."
+        "    -오빠를 믿을수 없다. 따라가지 않는다. 
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Fri Nov 22 13:18:47 2019
