@@ -7,20 +7,20 @@
 define f = Character('김성아', color="#c833c8")
 define b = Character('이은혁', color="#ff00c8")
 define q = Character('???', color="#005fc8")
-define c = Character('괴물', color="#5555c8")
+define cri = Character('괴물', color="#5555c8")
 $renpy.layer.at_list(shake, "master")
 transform duribun :
-    linear 0.1 xzoom -1 
+    linear 0.1 xzoom -1
     xalign 0.6
     time 0.4
-    linear 0.1 xzoom 1 
+    linear 0.1 xzoom 1
     xalign 0.5
 
-    
+
 transform goRight :
-    linear 0.5 xalign 1.0 
+    linear 0.5 xalign 1.0
 transform standUp :
-    yzoom 0 
+    yzoom 0
     linear 0.5 yzoom 1
 
 transform right_ :
@@ -43,7 +43,7 @@ transform shake:
         ease .01 yoffset 4
         ease .01 yoffset -4
         ease .01 yoffset 0
-    
+
 # 여기에서부터 게임이 시작합니다.
 
 
@@ -53,7 +53,7 @@ label start:
     "어느날 서울에 정체모를 폭탄이 떨어진뒤"
     "그날 이후 한국은 멸망했다."
     "이것은 멸망의 이야기"
-    scene bg subway 
+    scene bg subway
     with fade
     show f idle
     with dissolve
@@ -94,9 +94,9 @@ label start:
 
     "괴기한, 소름끼치는 소리다."
     "누군가 다치기라도 한걸까? 아니면 다른 무언가...?"
-    
+
     menu :
-    
+
         "-그 건물에 가본다":
             show f scared at goRight
             "호기심이 동한 나는 그만, 끌리듯 그 건물로 발걸음을 옮겼다."
@@ -107,7 +107,7 @@ label start:
             "그렇게 겨우 지각을 면한 나는 수업을 듣느라 정신없이 하루를 보냈다."
             jump badend_boom
 
-    
+
     #blackout
     scene bg bf with dissolve
     "그 건물 지하에 있었던것은"
@@ -131,8 +131,8 @@ label start:
     "뚜루루"
     "뚜루루"
     show f at left_ with move
-    show b smile at right 
-    show b smile at right_ 
+    show b smile at right
+    show b smile at right_
     with dissolve
     b "여보세요? 뭐야 너가 연락을 다하고."
     "여느때와 같은 활기찬 목소리."
@@ -169,7 +169,7 @@ label start:
     #black out
     pause 2
 
-    scene bg konkuk
+    scene bg gonghak
     show f idle
     play music "audio/A_emergency.mp3"
     "몇일뒤, 여느때처럼 등교하던날."
@@ -189,8 +189,8 @@ label start:
             scene bg classroom
             show f scared
             "공대의 빈 강의실로 들어가 문을 걸어 잠궜다."
-            
-    
+
+
     "저번에 괴물을 본 이후 이런 일이 일어날것 같다는 생각은 했지만 이렇게 일찍 벌어질 꺼라고는 생각도 못했다."
     f "아으..아아으아..아..."
     stop music fadeout 2
@@ -210,18 +210,18 @@ label start:
     q "..아 정신...려...성아야!"
     b "성아야 정신좀 차려!"
     show b angry with dissolve
-    
+
     "다행히 사람 얼굴이 보이는걸 보니 죽은건 아닌가보다."
     f "누구...세요?"
     "누군지 모를사람이 나를 열심히 깨우고 있었다. 아까 본 일들이 다 꿈이였으면"
     b "나야 은혁이"
     hide blackout1
-    
+
     show b angry at right_ with move
-    show f idle at left 
-    show f idle at left_ 
+    show f idle at left
+    show f idle at left_
     with dissolve
-    
+
     "익숙한 이름에 갑자기 정신이 번쩍하고 들었다."
     f "오빠?!"
     show b idle
@@ -241,8 +241,8 @@ label start:
     with fade
     show b idle at right
     show b idle at right_
-    show f idle at left 
-    show f idle at left_ 
+    show f idle at left
+    show f idle at left_
     with dissolve
     play music "audio/A_emergency.mp3"
 
@@ -281,12 +281,12 @@ label start:
     with fade
     show b idle at right
     show b idle at right_
-    show f idle at left 
-    show f idle at left_ 
+    show f idle at left
+    show f idle at left_
     with dissolve
     "공대를 지나, 문과대 앞에서 새천년관쪽으로 이동했다."
     "겨우 새천년관앞에 도착했지만 새천년관 문 앞에 괴물이 보인다."
-    c "그우우우.."
+    cri "그우우우.."
     "일단 새천년관 앞 흡연구역에 멈춰서서 몸을 숨긴뒤 괴물을 확인했다."
     "괴물은 문앞에 서서 가끔 이상한 소리를 낼 뿐 미동도 하지 않았다."
     f "어쩌지?"
@@ -307,7 +307,7 @@ label start:
     f "아...으.....아...윽."
     "어디서 나타났는지 나타난 괴물을 나를 노려보고있었다."
     "나는 말도 제대로 내지 못하고 그저 사시나무 떨듯 떨뿐이였다."
-    c "크아아악"
+    cri "크아아악!!!!!"
     "괴물이 나를 덮친다. "
     "나는 이제 정말 끝인가보다. 죽을때가 되면 슬로우 모션처럼 이런저런 생각이 난다던데"
     "어머니와 아버지는 무사할까? 사랑하는 내동생은? 그리고........"
@@ -338,10 +338,10 @@ label start:
     with fade
     show b idle at right
     show b idle at right_
-    show f idle at left 
-    show f idle at left_ 
+    show f idle at left
+    show f idle at left_
     with dissolve
-    play music "audio/A_peacefull.mp3" 
+    play music "audio/A_peacefull.mp3"
     "오빠와 함께 도달한 곳은 새천년관 지하에 있는 벙커였다. 학교안에 이런곳이 있었을 줄은 미처 몰랐지만"
     "오빠는 일감호 지하 벙커의 소문 발상지가 여기일 꺼라며 농담삼아 말을 해주었다."
     f "그래도 학교에 이런곳도 있다니 놀랍네"
@@ -378,7 +378,7 @@ label start:
     show none with dissolve
     call credits from _call_credits
     stop music fadeout 2
-    pause 3 
+    pause 3
     return
 
 
@@ -424,7 +424,7 @@ label credits:
     return
 
 init python:
-    credits = ('일러스트 여자', '최희은'), ('일러스트 남자', '조현종'), ('배경음악', '김민제'), ('배경', '강명수'), ('시나리오 원안', '정규태'), ('시나리오 편집', '조현종'), ('프로그래밍', '조현종'), ('프로그래밍', '주형진'),  ('발표', 'ㅁㅁ')
+    credits = ('일러스트 여자', '최희은'), ('일러스트 남자 프로그래밍 시나리오 편집', '조현종'), ('배경음악 ppt제작', '김민제'), ('배경제작', '강명수'), ('시나리오 원안 재구성', '정규태'), ('프로그래밍', '주형진'),  ('발표 발표대본작성', '김태연'), ('명화해석 선택지구성','이채원'), ('요약본 작성','유수빈')
     credits_s = "{size=80}Credits\n\n"
     c1 = ''
     for c in credits:
@@ -433,7 +433,7 @@ init python:
         credits_s += "{size=60}" + c[1] + "\n"
         c1=c[0]
     credits_s += "\n{size=40}Engine\n{size=60}Ren'py\n7.3.5.606" #Don't forget to set this to your Ren'py version
-    
+
 init:
 #    image cred = Text(credits_s, font="myfont.ttf", text_align=0.5) #use this if you want to use special fonts
     image cred = Text(credits_s, text_align=0.5)
